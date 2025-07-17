@@ -1,4 +1,4 @@
-import StudentController from "../controller/student.controller.js";
+import studentController from "../controller/student.controller.js";
 
 import express from "express";
 const router = express.Router();
@@ -17,3 +17,5 @@ router.put("/:id", studentController.update);
 
 //DELETE http://localhost:5001/api/v1/student/:id
 router.delete("/:id", studentController.deleteById);
+
+export default router;
